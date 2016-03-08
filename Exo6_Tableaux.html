@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Exo Tableaux</title>
+	<link rel="stylesheet" href="/style.css">
+	<script src="/scripts.js"></script>
+
+</head>
+<body>
+<h2><b>Exemple d'Alignement dans un Tableau</b> </h2>
+<br />
+<table border="1">
+	<caption>Liste des clients</caption>
+	<tr>
+		<th>Nom du Client</th>
+		<th>Pr&eacute;nom du Client</th>
+		<th>Adresse du Client</th>
+	</tr>
+	<tr align="center">
+		<td>DUPOND</td>
+		<td>L&eacute;on</td>
+		<td>3 rue de la paix, 38000 Grenoble</td>
+	</tr>
+	<tr>
+		<td align="right">DUBOIS</td>
+		<td>Claire</td>
+		<td>3 bis place de la poste, 38000 Grenoble</td>
+	</tr>
+	<tr>
+		<td valign="top">DUBUIS</td>
+		<td valign="bottom">Julie</td>
+		<td align="center">25 cours Berriat, 38000 Grenoble</td>
+	</tr>
+</table>
+<br /><br />
+<h2><b>Exemple de fusion de lignes & colonnes dans un Tableau</b> </h2>
+<br />
+<table border="1">
+	<caption>Liste des Clients</caption>
+	<tr>
+		<th>Nom du Client</th>
+		<th>Pr&eacute;nom du Client</th>
+		<th>Adresse du Client</th>
+	</tr>
+	<tr>
+		<td>DUPOND</td>
+		<td colspan="2">L&eacute;on / 3 rue de la paix, 38000 Grenoble</td>
+	</tr>
+	<tr>
+		<td>DUBOIS</td>
+		<td>Claire</td>
+		<td rowspan="2">25 cours Berriat, 38000 Grenoble</td>
+	</tr>
+	<tr>
+		<td>DUBUIS</td>
+		<td>Julie</td>
+	</tr>
+</table>
+
+</body>
+</html>

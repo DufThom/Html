@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaires</title>
+	<link rel="stylesheet" href="/style.css">
+	<script src="/scripts.js"></script>
+
+</head>
+<body>
+
+ <form method="get" action="http://bienvu.net/script.php">
+
+ <h1>Nous lan&ccedil;ons une grande enqu&ecirc;te sur les anciens stagiaires</h1>
+ <h3><center>merci de nous r&eacute;pondre</center></h3>
+ <fieldset>
+ 	<legend>Vos coordonn&eacute;es</legend>
+ <table>
+ 	<tr>
+ 		<td align="left">votre nom : </td>
+ 		<td align="left"><input required pattern="[A-Za-z]{3,}" type="text" name="nom"/></td>
+ 	</tr>
+ 	<tr>
+ 		<td align="left">votre pr&eacute;nom : </td>
+ 		<td align="left"><input type="text" name="prenom"/></td>
+ 	</tr>
+ 	<tr>
+ 		<td align="left">votre date de naissance : </td>
+ 		<td align="left"><input type="date" name="DoB"/></td>
+ 	</tr>
+ 	<tr>	
+ 		<td align="left">votre adresse : </td>
+ 		<td align="left"><input type="text" name="adresse"/></td>
+ 	</tr>
+ 	<tr>
+ 		<td align="left">votre ville : </td>
+ 		<td align="left"><input type="text" name="ville"/></td>
+ 	</tr>
+ 	<tr>
+ 		<td align="left">votre code postal : </td>
+ 		<td align="left"><input type="text" name="CP"/></td>
+ 	</tr>
+ 	<tr>
+ 		<td align="left">votre e-mail : </td>
+ 		<td align="left"><input type="text" name="mail"/></td>
+ 	</tr>
+</table>
+</fieldset><br>
+<fieldset>
+	Vous &ecirc;tes un homme : <input type="radio" name="sexe" value="homme" />
+	Vous &ecirc;tes une femme : <input type="radio" name="sexe" value="femme" />
+</fieldset><br>
+<fieldset>
+	<legend>Vos langages de programmation : </legend>
+	C# : <input type="checkbox" name="CSharp" value="CSharp" />
+	PHP : <input type="checkbox" name="php" value="php" />
+	HTML : <input type="checkbox" name="html" value="html" />
+	JavaScript : <input type="checkbox" name="jscript" value="jscript" />
+</fieldset><br>
+<select name="emploi">
+	<option value="dev">Développeur</option>
+	<option value="conc">Concepteur</option>
+	<option value="cho">Chômeur</option>
+	<option value="aut">Autre</option>
+</select><br>
+si vous avez répondu autre, précisez : <input type="text"/><br><br>
+<select name="salaire" size="1">
+	<option value="1"> &lt;1000 € </option>
+	<option value="2">&lt;2000 €</option>
+	<option value="3">&lt;3000 €</option>
+	<option value="?">De quoi je me mêle</option>
+</select><br>
+en quelle année avez-vous suivi le stage afpa ? <input type="text" name="DatForm"/><br><br>
+<textarea name="comment" cols="30" rows="5" placeholder="vos commentaires"></textarea><br>
+<h2>merci d'avoir répondu au questionnaire</h2>
+<input type="submit" value="validez" name="ok"/>
+<input type="reset" value="annulez" name="Annul"/>
+ 
+</form>
+ 
+</body>
+</html>
